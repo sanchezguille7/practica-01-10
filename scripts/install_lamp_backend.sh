@@ -16,5 +16,4 @@ sudo mysql -u root <<< "CREATE USER '$WORDPRESS_DB_USER'@'$IP_CLIENTE_MYSQL' IDE
 sudo mysql -u root <<< "GRANT ALL PRIVILEGES ON \`$WORDPRESS_DB_NAME\`.* TO '$WORDPRESS_DB_USER'@'$IP_CLIENTE_MYSQL';"
 sudo mysql -u root <<< "FLUSH PRIVILEGES;"
 
-
 systemctl restart mysql
